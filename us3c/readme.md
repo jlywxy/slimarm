@@ -1,5 +1,7 @@
 # uS3C: bare-metal code execution and Linux research on S3C2410AL
 
+## Note: This project is EOL.<br>
+- --
 This project is making a S3C2410AL core board to run bare-metal code and Linux.
 <br><br>
 Author: jlywxy(jlywxy@outlook.com)<br>
@@ -16,12 +18,12 @@ Document Version: 1.2<br>
 [ok]openocd connect and debug
 [ok]startup assembly explained and general concepts for arm startup sequences
 [ok]gnu toolchain bare-metal assembly compiling
-[..]pcb with flash and dram stable version(us3c ultra 1.1)
-[  ]pcb gerber sharing
-[  ]gnu toolchain bare-metal c code compiling
-[  ]writing simple bootloader supporting usb communication
-[  ]gnu toolchain u-boot compiling
-[  ]running Linux onboard
+[cancelled]pcb with flash and dram stable version(us3c ultra 1.1)
+[cancelled]pcb gerber sharing
+[cancelled]gnu toolchain bare-metal c code compiling
+[cancelled]writing simple bootloader supporting usb communication
+[cancelled]gnu toolchain u-boot compiling
+[cancelled]running Linux onboard
 ```
 
 - --

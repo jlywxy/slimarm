@@ -8,11 +8,13 @@ Document Version: 0.4<br>
 - --
 
 ## Project Status
-[ok]SlimARM Classic (Samsung S3C2410AL)<br>
-[..]SlimARM Zero (AllWinner A20/Rockchip RK3128)<br>
+[..]SlimARM Classic<br>
+----[ok]SlimARM Classic 2410<br>
+----[  ]SlimARM Classic 2416<br>
+[..]SlimARM Zero (Rockchip RK3128)<br>
 [..]SlimARM Fusion (Xilinx XC7Z010)<br>
 
-* Note: [ok] means work done, [..] means work doing, [  ] means work firstlly created.
+Note: [ok] means work done, [..] means work doing, [  ] means work firstlly created.
 
 - --
 
@@ -24,7 +26,7 @@ Document Version: 0.4<br>
 * SlimARM Classic<br>
 A board with minimum ARM requirements with only USB Device Port extended.<br>
 This board is pointing to low cost, replacing the legacy project 'us3c ultra'.<br>
-Current cost: 24 RMB approx. (S3C2410: 9, DRAM: 2, NAND: 4, PCB: 6, LDO/Caps/R/Xtals/...: 3)
+Current cost for SlimARM Classic 2410: 24 RMB approx. (S3C2410: 9, DRAM: 2, NAND: 4, PCB: 6, LDO/Caps/R/Xtals/...: 3)
 
 * SlimARM Zero<br>
 A board with minimum ARM requirements with USB, SDIO and Wi-Fi. <br>

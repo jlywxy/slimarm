@@ -20,9 +20,9 @@ Document Version: 2.1<br>
 [ok]pcb gerber sharing
 [ok]gnu toolchain(arm-none-eabi-) bare-metal c code compiling
 
-[..]writing simple usb device CDC communication program
-[..]crosstool-ng toolchain on macOS(arm-unknown-linux-gnueabi-) and u-boot compiling
-[..]running Linux onboard, debugging via USBD
+[failed]writing simple usb device CDC communication program
+[ok]crosstool-ng toolchain on macOS(arm-unknown-linux-gnueabi-) and u-boot compiling
+[failed]running Linux onboard, debugging via USBD
 ```
 - --
 
@@ -43,6 +43,14 @@ Samsung S3C2410AL-20:<br>
 * more but not related features...
 - --
 
+## S3C2410 Fail Part Problems
+The workaround part of linux running on the board is in a stall state, since none of the proper u-boot version is found for s3c2410 to use USB Device as a console interface. u-boot seems never supported s3c2410 USB Device. The transition for UDC codes from linux to u-boot is hard to do. <br>
+The fatal problem for USBD unablility is resulting from the board that did not extend any UART ports for u-boot to print debug messages.<br>
+Since the processor is too old (in performance and arch) nowadays and <b>lack of support</b>, this part of project is marked with EOL, and not designing and revising new boards with 2410.<br>
+<b>The day the usb device stuff is able to run on slimarm classic 2410, only the day the project starts again.</b><br>
+As a result, The whole project is putting more attention on those advanced processors, see part SlimARM Zero/Fusion.
+
+- --
 ## Making the core board for S3C2410
 
 Note: This project is now testing the new designed core board `slimarm classic 2410 v1r1` with:<br>
@@ -197,4 +205,7 @@ patch above: jlywxy@2023.2.5<br>
 
 patch above: jlywxy@2023.3.1<br>
 
+* Marked slimarm classic 2410 workaround state.
+
+patch above: jlywxy@2023.3.11<br>
 

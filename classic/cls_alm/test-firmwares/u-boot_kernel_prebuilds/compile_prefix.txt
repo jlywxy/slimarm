@@ -1,0 +1,10 @@
+# compile use gcc12
+ARCH=arm CPU=arm920t CROSS_COMPILE=~/arm-none-linux-gnueabihf_12.2.1/bin/arm-none-linux-gnueabihf- LOADADDR=0x30008000 KCFLAGS=-msoft-float
+# compile use gcc8
+ARCH=arm CPU=arm920t CROSS_COMPILE=~/arm-linux-gnueabi_8.2.1/bin/arm-linux-gnueabi- LOADADDR=0x30008000
+# compile use baremetal gcc12
+ARCH=arm CPU=arm920t CROSS_COMPILE=~/arm-none-eabi_12.2.1/bin/arm-none-eabi-
+# generate uImage
+~/u-boot-2016.11/tools/mkimage -A arm -T kernel -C none -O linux -a 0x30008000 -e 0x30008040 -d arch/arm/boot/zImage -n 'Linux' ~/uImage
+# set environment of ATAGS 
+set machid 0x000000c1

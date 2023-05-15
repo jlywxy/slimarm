@@ -1,4 +1,4 @@
-21691046514886259
+21697782087656915
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -90230,6 +90230,13 @@ Integrated Circuit
 272
 272
 jlywxy
+BUTTON_4P_3x4
+CK components KMR2 tactile switch http://www.ckswitches.com/media/1479/kmr2.pdf
+tactile switch kmr2
+0
+4
+4
+jlywxy
 Crystal_5032-4P
 SMD Crystal SERIES SMD2520/4 http://www.icbase.com/File/PDF/HKC/HKC00061008.pdf, 5.0x3.2mm^2 package
 SMD SMT crystal
@@ -90243,6 +90250,20 @@ DF13A-7P-1.25H21
 0
 9
 9
+jlywxy
+MT7601_Module
+
+
+0
+6
+6
+jlywxy
+MicroSD-TF_PUSH-SHOUHAN
+
+
+0
+13
+10
 jlywxy
 TSOP48_NAND
 
@@ -90273,6 +90294,13 @@ image_arm
 0
 jlywxy
 image_atmel
+
+
+0
+0
+0
+jlywxy
+image_microchip
 
 
 0

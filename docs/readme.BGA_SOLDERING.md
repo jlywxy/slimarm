@@ -6,8 +6,6 @@ From the experience of hardware debugging,
 the soldering of BGA is the most important step of making boards.<br>
 The following guide is tested to be the most effective and convenient to solder BGA chips manually without expensive equipments.<br>
 <br>
-中文版：<a href="readme.BGA_SOLDERING_CN.md">readme.BGA_SOLDERING_CN.md</a><br>
-<br>
 Version: v1r0x1fe<br>
 Author: jlywxy(jlywxy@outlook.com)<br>
 License: GPLv2<br>
@@ -23,7 +21,7 @@ Step|TODO|Effect|Comment
 3|Wash the flux away using washwater|Balls and chip are cleaned|optional
 4|Apply flux to the footprint on PCB|A Thin layer of flux is applied to the PCB|
 5|Put the chip onto PCB|The chip direction is correct and exactly in the dimension of silkscreen|If the silkscreen on the board is skewing a bit, slightly modify the relative position of chip and silkscreen
-6|Blow at 350°C using heat gun for 60 secs at least.Then, when the flux are melted, use twizzer to slightly touch the chip||DO NOT push the chip, only "Silk Touch"; If the chip is able to move by the twizzer, this step succeed.
+6|Blow at 350°C using heat gun for 30 secs at least.Then, when the flux are melted, use twizzer to slightly touch the chip||DO NOT push the chip, only "Silk Touch"; If the chip is able to move by the twizzer, this step succeed.
 7|Cool down for at least 2 minutes|The board are not hot to touch|
 
 ## For used BGA chips or PCB BGA reworking

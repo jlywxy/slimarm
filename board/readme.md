@@ -4,7 +4,9 @@ Project status:<br>
 ```
 [ok]SlimARM Almond Mini(S3C2410)
 [working]SlimARM Apricot(S3C2416)
-[working]SlimARM Carambola(AT91SAM9G25)
+[stalled]SlimARM Carambola(AT91SAM9G25)
+[planning]SlimARM Oxalis Mini(A20)
+[planning]SlimMIPS Cumquat(MT7620)
 ```
 
 - --
@@ -20,3 +22,8 @@ patch above: jlywxy@2023.3.11<br>
 * Adding new board of S3C2416 and AT91SAM9G25 SoCs.
 
 patch above: jlywxy@2023.5.20<br>
+
+* Adding new board of A20 and MT7620 SoCs.
+* Marked `Carambola` stall state.
+
+patch above: jlywxy@2023.5.27<br>

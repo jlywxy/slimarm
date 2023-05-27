@@ -1,17 +1,15 @@
-# BGA chips Soldering Guide
+# Small/Medium BGA chips Hand-Soldering Guide
 
 
-The most of SlimARM boards are using CPUs in BGA package.<br> 
-From the experience of hardware debugging, 
-the soldering of BGA is the most important step of making boards.<br>
-The following guide is tested to be the most effective and convenient to solder BGA chips manually without expensive equipments.<br>
+The following guide is tested to be the most effective to solder BGA chips manually (using heat-gun and stencil) without expensive equipments.<br>
 <br>
-Version: v1r0x1fe<br>
+Version: v1r1x20e<br>
 Author: jlywxy(jlywxy@outlook.com)<br>
 License: GPLv2<br>
 - --
 
 ## For new pre-balled BGA chips
+Intention: Make a new BGA chips onto a new PCB.<br><br>
 Prerequisites: a heat gun, soldering flux, washwater
 
 Step|TODO|Effect|Comment
@@ -25,9 +23,10 @@ Step|TODO|Effect|Comment
 7|Cool down for at least 2 minutes|The board are not hot to touch|
 
 ## For used BGA chips or PCB BGA reworking
+Intention: Get the on-board BGA chips off, then transfer it to a new PCB.<br><br>
 Prerequisites: <br>
 (1) BGA Tools: <br>
-heat gun, BGA hard-steel(direct-heat) stencil(hole 0.5mm), BGA soldering <br>balls(0.45mm) <br>
+heat gun, BGA hard-steel(direct-heat) stencil(hole 0.5mm), BGA soldering balls <br>
 (2) Generic Soldering Tools: <br>
 soldering flux, washwater, good-quality solder wick.<br>
 
@@ -41,10 +40,13 @@ Step|TODO|Effect|Comment
 11|BGA chip soldering: <br>jump to `For new pre-balled BGA chips` Step 4||
 
 ## BGA re-balling
+Intention: Make the ball onto a used BGA chip that have no balls and cleaned.<br>
+Note: for 0.8-pitch BGA grid, use 0.45mm balls; for 0.65-pitch, use 0.3mm balls, if the chip do not declared explicitly.
+<br><br>
 
 Step|TODO|Effect|Comment
 -|-|-|-
-1|Apply a thin layer of flux onto the chip|The flux evenly applied on the chip|
+1|Apply a thin layer of flux onto the chip|The flux evenly applied on the chip|optional before step 5. If this step not be done, it have to be done right after step 5(before removing the stencil).
 2|Put the stencil on the chip|make holes exactly matched to every pad on the chip|
 3|Put BGA soldering tin balls into every holes that matched the pads on the chip|Make sure every pad has it ball
 4|Blow at 310°C using heat gun directly on the stencil|All balls are melted and attached to every pad. |If the stencil is twisting of the heat, use a direct-heat stencil

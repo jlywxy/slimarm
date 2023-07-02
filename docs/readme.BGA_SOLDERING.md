@@ -3,7 +3,7 @@
 
 The following guide is tested to be the most effective to solder BGA chips manually (using heat-gun and stencil) without expensive equipments.<br>
 <br>
-Version: v1r1x20e<br>
+Version: v2r0x2bd<br>
 Author: jlywxy(jlywxy@outlook.com)<br>
 License: GPLv2<br>
 - --
@@ -16,14 +16,15 @@ Step|TODO|Effect|Comment
 -|-|-|-
 1|Apply flux to balls on the pad|The flux evenly applied on the chip|
 2|Blow at 310°C using heat gun|Balls all melted and shining|
-3|Wash the flux away using washwater|Balls and chip are cleaned|optional
-4|Apply flux to the footprint on PCB|A Thin layer of flux is applied to the PCB|
-5|Put the chip onto PCB|The chip direction is correct and exactly in the dimension of silkscreen|If the silkscreen on the board is skewing a bit, slightly modify the relative position of chip and silkscreen
-6|Blow at 350°C using heat gun for 30 secs at least.Then, when the flux are melted, use twizzer to slightly touch the chip||DO NOT push the chip, only "Silk Touch"; If the chip is able to move by the twizzer, this step succeed.
-7|Cool down for at least 2 minutes|The board are not hot to touch|
+3|Wash the flux away using washwater|Balls and chip are cleaned|This step should not be skipped to prevent 'rosin joint'
+4|Wash the board with weak acid liquid (e.g. vinegar), and wash away with water, dry up the board.|The oxide layer should be cleaned|This step should be skipped when working on boards which pads are processed with electrolytic gold.
+5|Apply flux to the footprint on PCB|A Thin layer of flux is applied to the PCB|
+6|Put the chip onto PCB|The chip direction is correct and exactly in the dimension of silkscreen|If the silkscreen on the board is skewing a bit, slightly modify the relative position of chip and silkscreen
+7|Blow at 350°C using heat gun for 30 secs at least.Then, when the flux are melted, use twizzer to slightly touch the chip||DO NOT push the chip, only "Silk Touch"; If the chip is able to move by the twizzer, this step succeed.
+8|Cool down for at least 2 minutes|The board are not hot to touch|
 
 ## For used BGA chips or PCB BGA reworking
-Intention: Get the on-board BGA chips off, then transfer it to a new PCB.<br><br>
+Intention: Get the on-board BGA chips off, then transfer it to a new PCB; Solder the chip again on existing board to prevent soldering problem.<br><br>
 Prerequisites: <br>
 (1) BGA Tools: <br>
 heat gun, BGA hard-steel(direct-heat) stencil(hole 0.5mm), BGA soldering balls <br>
@@ -37,7 +38,7 @@ Step|TODO|Effect|Comment
 3|use solderwick to clean the footprint on PCB|all pads are flat without any remaining soldering tin|The board has to be cooled down; DO NOT push too hard on the solderwick(or the soldermask will be peeled); all pads are flat without any remaining soldering tin|
 4|Wash the flux away using washwater, applied to chip and PCB|PCB and chip are cleaned|mandatory
 5|BGA re-balling: <br>jump to `BGA re-balling` Step 1||
-11|BGA chip soldering: <br>jump to `For new pre-balled BGA chips` Step 4||
+11|BGA chip soldering: <br>jump to `For new pre-balled BGA chips` Step 5||
 
 ## BGA re-balling
 Intention: Make the ball onto a used BGA chip that have no balls and cleaned.<br>

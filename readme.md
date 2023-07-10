@@ -17,15 +17,15 @@ Status of Working Boards:
 Code|Chipset|Core<br>DRAM Clock|PCB Stack<br>EDA|Status
 -|-|-|-|-
 Azalea|Rockchip RK3128|1.1GHz 4x Cortex-A7<br>533MHz(1066Mbps)DDR3|4-layer<br>Cadence|pre-sch
-Hypericum|Allwinner A20|1.2GHz 2x Cortex-A7<br>400MHz(800Mbps) DDR3|4-layer<br>KiCad|pcb-revision
-Carambola|Atmel AT91SAM9G25|400MHz ARM926EJ-S<br>133MHz(266Mbps) DDR2|4-layer<br>KiCad|pcb-revision
-Apricot B|Samsung S3C2416X|400MHz ARM926EJ-S<br>133MHz(266Mbps) DDR2|4-layer<br>LCEDA|pcb-revision
+Hypericum|Allwinner A20|1.2GHz 2x Cortex-A7<br>400MHz(800Mbps) DDR3|4-layer<br>KiCad|✅pcb-revision
+Carambola|Atmel AT91SAM9G25|400MHz ARM926EJ-S<br>133MHz(266Mbps) DDR2|4-layer<br>KiCad|✅pcb-revision
+Apricot B|Samsung S3C2416X|400MHz ARM926EJ-S<br>133MHz(266Mbps) DDR2|4-layer<br>LCEDA|✅pcb-revision
 Almond B|Samsung S3C2410|200MHz ARM920T<br>133MHz SDR|4-layer<br>KiCAD|pcb-revision
 ||||
 Clematis|Rockchip RK3188|1.1GHz 4x Cortex-A9<br>533MHz(1066Mbps)DDR3|4-layer<br>KiCad|avail-analyse
 |Cumquat<br>(*SlimMIPS)|MediaTek MT7620A|580MHz MIPS24KEc<br>192MHz(384Mbps) DDR2|4-layer<br>KiCAD & Cadence(two versions)|planning
 
-Project Status Pipeline: planning -> avail-analyse -> pre-sch -> pcb-fab-test(1-stage pcb) -> software-test  -> post-sch -> pcb-revision -> post-pcb-fab-test(final pcb) -> post-software-test -> done
+Project Pipeline: planning -> avail-analyse -> pre-sch -> pcb-fab-test(1-stage pcb) -> software-test  -> post-sch -> pcb-revision -> post-pcb-fab-test(final pcb) -> post-software-test -> done
 
 - --
 ## Lastest Information
@@ -41,6 +41,7 @@ Project Status Pipeline: planning -> avail-analyse -> pre-sch -> pcb-fab-test(1-
 * corrected `Apricot` ddr clock information in project progress chart to 133 MHz. @ 2023.6.2
 * dropped `Carambola`; starting `Oxalis Mini` schematic design. @ 2023.6.4
 * revisioning `Carambola`; starting `Hypericum`. @ 2023.6.24
-* `Hypericum`(Allwinner-A20) first board test done, revisioning; `Apricot`(S3C2416) third board(v1r3) test done, revisioning; `Carambola` board under test. @ 2023.7.2
+* `Hypericum`(a alias of `Oxalis Mini`)(Allwinner-A20) first board test done, revisioning; `Apricot`(S3C2416) third board(v1r3) test done, revisioning; `Carambola` board under test. @ 2023.7.2
+* Fixed SDIO pull-up problem for `Hypericum`, `Carambola`, `Apricot` boards. @ 2023.7.11
 
 
